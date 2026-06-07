@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تبلیغات ارزان | سرگرمی خان</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Vazirmatn',sans-serif;
+}
+
+body{
+background:#071220;
+color:white;
+overflow-x:hidden;
+min-height:100vh;
+}
+
+.bg{
+position:fixed;
+width:100%;
+height:100%;
+top:0;
+left:0;
+z-index:-1;
+overflow:hidden;
+}
+
+.circle{
+position:absolute;
+border-radius:50%;
+background:rgba(0,150,255,.18);
+backdrop-filter:blur(4px);
+animation:float linear infinite;
+}
+
+@keyframes float{
+0%{
+transform:translateY(120vh) rotate(0deg);
+opacity:0;
+}
+10%{
+opacity:1;
+}
+100%{
+transform:translateY(-150px) rotate(360deg);
+opacity:0;
+}
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
+
+.hero{
+text-align:center;
+padding:50px 15px 25px;
+}
+
+.hero h1{
+font-size:3rem;
+font-weight:900;
+text-shadow:0 0 20px #009dff;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#c8e5ff;
+font-size:1.1rem;
+}
+
+.top-buttons{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+margin:30px 0;
+}
+
+.btn{
+display:block;
+text-decoration:none;
+text-align:center;
+padding:18px;
+border-radius:18px;
+font-weight:bold;
+color:white;
+background:linear-gradient(45deg,#0078ff,#00b7ff);
+transition:.3s;
+box-shadow:0 0 20px rgba(0,150,255,.25);
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+.prices{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:20px;
+}
+
+.card{
+background:rgba(255,255,255,.08);
+border:1px solid rgba(255,255,255,.1);
+backdrop-filter:blur(10px);
+border-radius:25px;
+padding:30px;
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 30px rgba(0,150,255,.35);
+}
+
+.card h2{
+margin-bottom:15px;
+}
+
+.price{
+font-size:2rem;
+font-weight:900;
+color:#00b7ff;
+margin:15px 0;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+margin:40px 0;
+}
+
+.stat{
+background:rgba(255,255,255,.08);
+padding:25px;
+border-radius:20px;
+text-align:center;
+}
+
+.stat h3{
+font-size:2rem;
+color:#00b7ff;
+margin-bottom:10px;
+}
+
+.box{
+background:rgba(255,255,255,.08);
+padding:25px;
+border-radius:25px;
+margin:25px 0;
+}
+
+.box h2{
+margin-bottom:15px;
+}
+
+.box ul{
+list-style:none;
+}
+
+.box li{
+margin:10px 0;
+}
+
+.reviews{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:20px;
+}
+
+.review{
+background:rgba(255,255,255,.08);
+padding:20px;
+border-radius:20px;
+}
+
+.review .stars{
+color:gold;
+margin-bottom:10px;
+}
+
+.footer{
+text-align:center;
+padding:40px 10px;
+color:#d7ebff;
+font-size:1.1rem;
+}
+</style>
+</head>
+<body>
+
+<div class="bg" id="bg"></div>
+
+<div class="container">
+
+<div class="hero">
+<h1>🔥 تبلیغات ارزان و فوری</h1>
+<p>تبلیغ خود را در کمترین زمان منتشر کنید</p>
+</div>
+
+<div class="top-buttons">
+
+<a class="btn" href="https://rubika.ir/sargarmikhan_bot">
+🤖 تبلیغ در ربات
+</a>
+
+<a class="btn" href="https://rubika.ir/joing/+JJIJEHAC0YBMILNTKTXCLFVAMUEDHBIC">
+👥 تبلیغ در گپ
+</a>
+
+<a class="btn" href="https://rubika.ir/khan_peugeot">
+⭐ پکیج ویژه
+</a>
+
+<a class="btn" href="https://rubika.ir/khan_peugeot">
+🛒 خرید تبلیغ
+</a>
+
+</div>
+
+<div class="prices">
+
+<div class="card">
+<h2>🤖 تبلیغ در ربات</h2>
+<div class="price">۵,۰۰۰ تومان</div>
+<p>ارسال سریع و آنی</p>
+</div>
+
+<div class="card">
+<h2>👥 تبلیغ در گپ</h2>
+<div class="price">۱۰,۰۰۰ تومان</div>
+<p>بازدید واقعی</p>
+</div>
+
+<div class="card">
+<h2>⭐ پکیج ویژه</h2>
+<div class="price">۱۵,۰۰۰ تومان</div>
+<p>ربات + گپ با تخفیف</p>
+</div>
+
+</div>
+
+<div class="stats">
+
+<div class="stat">
+<h3>+۵۰۰</h3>
+<p>تبلیغ ثبت شده</p>
+</div>
+
+<div class="stat">
+<h3>+۱۰۰۰</h3>
+<p>عضو فعال</p>
+</div>
+
+<div class="stat">
+<h3>۱۰ دقیقه</h3>
+<p>میانگین تحویل</p>
+</div>
+
+</div><div class="box">
+<h2>✅ مزایا</h2>
+<ul>
+<li>⚡ تحویل فوری</li>
+<li>📢 بازدید واقعی</li>
+<li>📝 بدون محدودیت متن</li>
+<li>📷 امکان ارسال عکس و فایل</li>
+<li>🕐 ثبت سفارش ۲۴ ساعته</li>
+</ul>
+</div>
+
+<div class="box">
+<h2>💬 نظرات کاربران</h2>
+
+<div class="reviews">
+
+<div class="review">
+<div class="stars">⭐⭐⭐⭐⭐</div>
+تبلیغم کمتر از ۵ دقیقه ارسال شد. عالی بود.
+<br><br>
+— علی
+</div>
+
+<div class="review">
+<div class="stars">⭐⭐⭐⭐⭐</div>
+قیمت مناسب و بازدید خوبی گرفتم.
+<br><br>
+— محمد
+</div>
+
+<div class="review">
+<div class="stars">⭐⭐⭐⭐⭐</div>
+پشتیبانی سریع و ارسال دقیق.
+<br><br>
+— رضا
+</div>
+
+</div>
+</div>
+
+<div class="footer">
+🔥 همین حالا تبلیغ خود را ثبت کنید
+<br><br>
+@sargarmikhan_bot
+</div>
+
+</div>
+
+<script>
+const bg=document.getElementById("bg");
+
+for(let i=0;i<35;i++){
+
+let c=document.createElement("div");
+c.className="circle";
+
+let size=Math.random()*50+15;
+
+c.style.width=size+"px";
+c.style.height=size+"px";
+
+c.style.left=Math.random()*100+"%";
+
+c.style.animationDuration=
+(Math.random()*5+4)+"s";
+
+c.style.animationDelay=
+(Math.random()*5)+"s";
+
+bg.appendChild(c);
+
+}
+</script>
+
+</body>
+</html>
